@@ -1,0 +1,11 @@
+{
+  "name": "@bytedo/vue-live-cli",
+  "type": "module",
+  "version": "0.0.1",
+  "bin": {
+    "vue-live-cli": "index.js"
+  },
+  "dependencies": {
+    "iofs": "^1.5.2"
+  }
+}
