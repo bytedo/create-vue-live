@@ -20,6 +20,8 @@ import {
   writeStore
 } from './lib/demo-js.js'
 
+const { version } = JSON.parse(fs.cat('./package.json'))
+
 let args = process.argv.slice(2)
 
 function printHelp() {
@@ -61,6 +63,11 @@ switch (args[0]) {
       console.error('当前目录非空, 请切换到一个空目录再执行~~')
       process.exit()
     }
+    break
+
+  case '-v':
+  case '--version':
+    console.log('v' + version)
     break
 
   default:
