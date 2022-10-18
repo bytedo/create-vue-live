@@ -6,7 +6,7 @@
  */
 
 import fs from 'iofs'
-import { resolve, join } from 'path'
+import { resolve, join, dirname } from 'path'
 import { writePackageJson, writeConfigFile, writeGitIgnore } from './lib/demo-config.js'
 import { writeHtmlFile } from './lib/demo-html.js'
 import { writeLogo } from './lib/logo.js'
@@ -20,7 +20,8 @@ import {
   writeStore
 } from './lib/demo-js.js'
 
-const { version } = JSON.parse(fs.cat('./package.json'))
+const root = dirname(import.meta.url.slice(7))
+const { version } = JSON.parse(fs.cat(join(root, './package.json')))
 
 let args = process.argv.slice(2)
 
