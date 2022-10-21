@@ -1,4 +1,4 @@
-#!/bin/env node
+#!/usr/bin/env node
 /**
  *
  * @author yutent<yutent.io@gmail.com>
