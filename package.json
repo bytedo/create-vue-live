@@ -1,9 +1,9 @@
 {
-  "name": "@bytedo/vue-live-cli",
+  "name": "create-vue-live",
   "type": "module",
   "version": "0.0.7",
   "bin": {
-    "vue-live-cli": "index.js"
+    "create-vue-live": "index.js"
   },
   "dependencies": {
     "iofs": "^1.5.2"
