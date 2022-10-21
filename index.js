@@ -5,7 +5,7 @@
  * @date 2022/10/10 15:17:36
  */
 
-import { red, cyan } from 'kolorist'
+import { red, cyan, blue } from 'kolorist'
 import prompts from 'prompts'
 import fs from 'iofs'
 import { resolve, join, dirname } from 'path'
@@ -147,8 +147,8 @@ function printHelp() {
 
       console.log('[oooooooooo]', '100%')
       console.log(cyan('初始化完成, 可依次执行以下命令启动项目: '))
-      console.log('npm i')
-      console.log('npm start')
+      console.log(blue('npm i'))
+      console.log(blue('npm start'))
 
       break
   }
