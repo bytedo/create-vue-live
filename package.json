@@ -1,7 +1,7 @@
 {
   "name": "create-vue-live",
   "type": "module",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "bin": {
     "create-vue-live": "index.js"
   },

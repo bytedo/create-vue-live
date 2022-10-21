@@ -28,7 +28,7 @@ import {
 } from './lib/demo-js.js'
 
 const CURRENT_DIR = process.cwd()
-const root = dirname(import.meta.url.slice(7))
+const root = dirname(import.meta.url.slice(process.platform === 'win32' ? 10 : 7))
 const { version } = JSON.parse(fs.cat(join(root, './package.json')))
 
 const DEFAULT_NAME = 'vue-live-app'
